@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Json Visualizer</title>
 </head>
 <body>
-    
+    <div class="container">
+        <textarea class="large-area1 large-area--input" placeholder="Enter your JSON here...">
+                {"name": "Dom"}
+            </textarea>
+        <div class="controls">
+            <button type="button" class="controls__button controls__button--format">Upload</button>
+            <button type="button" class="controls__button controls__button--minify">Formate</button>
+        </div>
+        <textarea readonly class="large-area large-area--output" placeholder="Your JSON will appear here..."></textarea>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+     <script src="./treedata.json"></script>
+   <script src="main.js"></script>
 </body>
 </html>
